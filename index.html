@@ -12,35 +12,57 @@
         <div class="img_circular_ring">
           <img src="./img/man.png" alt="profile image" />
         </div>
-        <h2>Shuvam BC</h2>
+        <h2>Shuvam</h2>
       </div>
       <div>
         <div style="flex: 1; text-align: right">
           <a href="#home">Home</a>
           <a href="#about_me">About Me</a>
           <a href="#education">Education</a>
-          <a href="#interest">Interest</a>
+          <a href="#interest_section">Interest</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
     </section>
-    <section class="home">
+    <section id="home" class="home">
       <div class="text_container">
         <h2><span class="lg_text">Hi,</span> I'm Shuvam BC</h2>
         <h2>I'm a <span class="lg_text">FULL STACK DEVELOPER</span></h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
-          expedita dolore asperiores numquam necessitatibus molestiae?Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Rem neque quas
-          exercitationem totam facilis harum.
-        </p>
+        <div id="about_me">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+            expedita dolore asperiores numquam necessitatibus molestiae?Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Rem neque quas
+            exercitationem totam facilis harum.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="interest">
-      <div class="interest_title">Interest</div>
+    <section id="education" class="qualification">
+      <div class="qualification_title">
+        <h2>Qualifications</h2>
+      </div>
       <div class="container">
+        <div class="qualification_header items1">Degree/Qualification</div>
+        <div class="qualification_header items2">Institution</div>
+        <div class="qualification_header items3">Board</div>
+        <div class="qualification_header items4">Marks</div>
+        <div class="items items5">Secondary Education</div>
+        <div class="items items6">XYZ Secondary School</div>
+        <div class="items items2">NEB</div>
+        <div class="items items2">A+</div>
+        <div class="items items5">High School Diploma</div>
+        <div class="items items6">XYZ High School</div>
+        <div class="items items2">NEB</div>
+        <div class="items items2">A+</div>
+      </div>
+    </section>
+    <section id="interest_section" class="interest">
+      <div class="interest_title">Interest</div>
+      <div class="interest_card">
         <!-- <div class="items items1"> -->
-        <div class="card">
+        <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/web.png" alt="" />
           </div>
@@ -56,7 +78,7 @@
         </div>
         <!-- </div> -->
         <!-- <div class="items items2"> -->
-        <div class="card">
+        <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/mobile.png" alt="" />
           </div>
@@ -72,7 +94,7 @@
         </div>
         <!-- </div> -->
         <!-- <div class="items items3"> -->
-        <div class="card shadow">
+        <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/uiux.png" alt="" />
           </div>
@@ -89,17 +111,42 @@
         <!-- </div> -->
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Qualifications</h2>
-      </div>
-      <div class="items items1"></div>
-      <div class="items items2"></div>
-      <div class="items items3"></div>
-      <div class="items items4"></div>
-      <div class="items items5"></div>
-      <div class="items items6"></div>
-      <div></div>
+    <section id="contact">
+      <form action="" method="" class="contact_card apply_boxShadow">
+        <h2 style="display: flex; justify-content: center">Contact Form</h2>
+        <div class="form_div">
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value=""
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="form_div">
+          <label for="lname">Email</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            value=""
+            placeholder="john@doe.com"
+          />
+        </div>
+        <div class="form_div">
+          <label for="message">Message</label>
+          <textarea
+            type="message"
+            rows="4"
+            cols="50"
+            placeholder="Leave a message..."
+          ></textarea>
+        </div>
+        <div class="button_container">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </section>
     <section class="footer">
       Copyright &#169; 2023 Shuvam BC. All rights reserved
