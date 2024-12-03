@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="shortcut icon" type="x-icon" href="./img/man.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <section class="header">
@@ -16,11 +24,23 @@
       </div>
       <div>
         <div style="flex: 1; text-align: right">
-          <a href="#home">Home</a>
-          <a href="#about_me">About Me</a>
-          <a href="#education">Education</a>
-          <a href="#interest_section">Interest</a>
-          <a href="#contact">Contact</a>
+          <a href="#home"
+            ><span><i class="fa-solid fa-house"></i></span>Home</a
+          >
+          <a href="#about_me"
+            ><span><i class="fa-solid fa-user"></i></span>About Me</a
+          >
+          <a href="#education"
+            ><span><i class="fa-solid fa-graduation-cap"></i></span>Education</a
+          >
+          <a href="#interest_section"
+            ><span><i class="fa fa-heart" aria-hidden="true"></i></span
+            >Interest</a
+          >
+          <a href="#contact"
+            ><span><i class="fa fa-file-text" aria-hidden="true"></i></span
+            >Contact</a
+          >
         </div>
       </div>
     </section>
@@ -61,7 +81,6 @@
     <section id="interest_section" class="interest">
       <div class="interest_title">Interest</div>
       <div class="interest_card">
-        <!-- <div class="items items1"> -->
         <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/web.png" alt="" />
@@ -76,8 +95,6 @@
             </p>
           </div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="items items2"> -->
         <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/mobile.png" alt="" />
@@ -92,8 +109,6 @@
             </p>
           </div>
         </div>
-        <!-- </div> -->
-        <!-- <div class="items items3"> -->
         <div class="card_container shadow">
           <div class="image_container">
             <img src="./img/uiux.png" alt="" />
@@ -108,40 +123,47 @@
             </p>
           </div>
         </div>
-        <!-- </div> -->
       </div>
     </section>
-    <section id="contact">
-      <form action="" method="" class="contact_card apply_boxShadow">
-        <h2 style="display: flex; justify-content: center">Contact Form</h2>
-        <div class="form_div">
-          <label for="fname">Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="fname"
-            value=""
-            placeholder="John Doe"
-          />
+    <section id="contact" class="contact-form">
+      <form action="">
+        <h2>Contact Form</h2>
+        <div class="input-box">
+          <label for="name">Name</label>
+          <div class="icon-input-box">
+            <i class="fa fa-user test-icon" aria-hidden="true"></i>
+            <input
+              type="text"
+              id="name"
+              class="input-test"
+              placeholder="John Doe"
+            />
+          </div>
         </div>
-        <div class="form_div">
-          <label for="lname">Email</label>
-          <input
-            type="text"
-            id="lname"
-            name="lname"
-            value=""
-            placeholder="john@doe.com"
-          />
+        <div class="input-box">
+          <label for="email">Email</label>
+          <div class="icon-input-box">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <input
+              type="text"
+              id="email"
+              class="input-test"
+              placeholder="john@doe.com"
+            />
+          </div>
         </div>
-        <div class="form_div">
+        <div class="input-box">
           <label for="message">Message</label>
-          <textarea
-            type="message"
-            rows="4"
-            cols="50"
-            placeholder="Leave a message..."
-          ></textarea>
+          <div class="icon-input-box">
+            <i class="fa fa-commenting" aria-hidden="true"></i>
+            <textarea
+              type="message"
+              rows="3"
+              cols="50"
+              id="message"
+              placeholder="Leave a message..."
+            ></textarea>
+          </div>
         </div>
         <div class="button_container">
           <button type="submit">Submit</button>
@@ -149,7 +171,25 @@
       </form>
     </section>
     <section class="footer">
-      Copyright &#169; 2023 Shuvam BC. All rights reserved
+      <div class="copyright">
+        Copyright &#169; 2023 Shuvam BC. All rights reserved
+      </div>
+      <div class="social-media-link">
+        <a href="https://www.facebook.com/shuvam.bc.9" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/shuvambc/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/shuvam-bc-38140717b/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/bcShuvam/portfolio" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
     </section>
   </body>
 </html>
